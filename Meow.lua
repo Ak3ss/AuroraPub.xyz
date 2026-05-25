@@ -6214,5 +6214,7 @@ local Library do
     end
 end
 
+Library:Notification("Loaded!", "Menu took "..string.format("%.4f", os.clock() - LoadTick).." seconds to load", 5)
+
 getgenv().Library = Library
 return Library
